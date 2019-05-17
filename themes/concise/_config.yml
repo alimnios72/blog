@@ -27,6 +27,10 @@ links:
   - svg: ./source/svg/twitter.svg
     url: https://twitter.com/cacharro
 
+# github comment 
+git_commit:
+  enable: false
+
 
 # Miscellaneous
 rss: /atom.xml
