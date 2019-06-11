@@ -23,4 +23,4 @@ export NO\_PROXY=$(docker-machine ip default)
 
  Listo, con eso mis problemas quedaron resuelto.
 
-**Nota:** por alguna razón a veces es necesario reiniciar la Mac, prender la docher machine y exportar la variable.
+**Nota:** por alguna razón a veces es necesario reiniciar la Mac, prender la docker machine y exportar la variable.
