@@ -1,13 +1,16 @@
 ---
 title: Una historia de mirreyes
-categories:
-  - blog/personal/opinion
-id: 3
 date: 2012-12-08 02:28:52
+categories:
+  - opinion
+id: 3
 tags:
+  - mirrey
+  - bombay bycicle club
 ---
 
 Hasta hace unos días pensaba que los reggaetoneros eran una de las especies más abominables de este planeta, y en efecto lo son, sin embargo existe una especie con características diferentes, pero igualmente repugnantes. Estoy hablando de los mirreyes, dichas creaturas caracterizadas por ser hijos de 'papi' y cuya finalidad (si es que poseen alguna) es tratar de proyectar una vida sumamente lujosa con base en bienes materiales (para mayores detallessobre una definición de mirrey pueden recurrir a la siguiente [liga](http://mx.answers.yahoo.com/question/index?qid=20110516194344AAkAyep)).
+<!-- more -->
 
 Uno creería que esta clase de sujetos son inofensivos como los pinta el sitio [mirreybook.com](http://www.mirrreybook.com/ "Mirreybook"). En lo personal creía que fuera del peloenpecho, champú, lobukis, el yate y sus tan usuales duckfaces, no afectaban a la gente común y corriente. Este concepto se vino abajo apenas el día de ayer cuando me topé con una serie de mirreyes a los que se les ocurrió asistir al concierto de Bombay Bicycle Club. Sinceramente es la primera vez que acudo al plaza Condesa y no sé si este lugar se caracteriza por ser punto de reunión para "mirreyes rockers" pero ese día hubo una gran multitud de los mismos, pudiera ser que hablemos del nuevo "Bull" (como usualmente denominan al Bulldog Café).
 

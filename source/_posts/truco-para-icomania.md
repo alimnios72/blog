@@ -1,13 +1,16 @@
 ---
 title: Truco para Icomania
-categories:
-  - blog/tecnologia/apps
-id: 6
 date: 2014-07-15 01:50:38
+categories:
+  - apps
+id: 6
 tags:
+  - icomania
+  - trucos
 ---
 
 Icomania es un juego que consiste en adivinar marcas, personajes, ciudades, entre otras cosas a partir de una imagen. Puedes utilizar alguno de los 2 botones de ayuda (o ambos )cuando no se te ocurre la respuesta correcta, el primer botón te ayuda con una letra de la respuesta mientras que el segundo elimina un caracter de la sopa de letras. Sin embargo es posible que no tengas ayuda disponible o que incluso con la ayuda no puedas adivinar la respuesta correcta, es por eso que posteo este truco para ayudarte a sobrellevar estos casos.El truco funciona (en un 95% de los casos) en dispositivos iOS (iPhone, iPod, iPad) con conexión a internet, para dispositivos Android habrá que seguir la esencia del procedimiento pero con los comando correspondientes.
+<!-- more -->
 
 1.   Da click sobre la imagen.
 2.  Toma una captura de pantalla de la imagen ampliada presionando los 2 botones del dispositivo al mismo tiempo (más información [aquí](http://tecnologia.uncomo.com/articulo/como-hacer-una-captura-de-pantalla-en-el-iphone-3822.html)).  

@@ -1,10 +1,13 @@
 ---
 title: Instalar php phalcon framework en Ubuntu Server 14.04 VM
-categories:
-  - blog/tecnologia/tutoriales
-id: 10
 date: 2014-08-27 00:18:25
+categories:
+  - tutoriales
+id: 10
 tags:
+  - php
+  - phalcon
+  - ubuntu
 ---
 
 Hace unos meses un amigo me comentó que utiliza el framework [phalcon](http://phalconphp.com/en/ "Phalcon PHP") para sus proyectos así que me di a la tarea de investigar acerca del mismo. Parece ser un framework estable y según los benchmarks publicados en su sitio es un framework muy veloz puesto carga como módulo de PHP, a diferencia de algunos otros frameworks compuestos por varias clases PHP que deben ser incluidas.Para lograr un entorno de desarrollo diferente al que utilizo en mi trabajo y otros proyectos, decidí hacerlo desde una máquina virtual (Virtualbox) a la cual instalé Ubuntu server 14.04. Se trata de una versión LTS que tiene ya listo en sus repositorios PHP 5.5 y apache 2.4.

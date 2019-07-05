@@ -1,15 +1,19 @@
 ---
 title: Mostrar la codificación de todos los archivos en un directorio recursivamente
-categories:
-  - blog/tecnologia/linux
-id: 9
 date: 2014-07-18 19:36:06
+categories:
+  - linux
+id: 9
 tags:
+  - linux
+  - codificacion
+  - find
 ---
 
 Si por alguna razón tienes la necesidad de mostrar la codificación (encoding) de todos los archivos dentro de un directorio y subdirectorios, el comando **find** de Linux resulta de gran ayuda. Supongamos que deseas mostrar la codificación de todos los archivos _.php_ dentro del directorio acutal:$ find . -type f -name \\\*.php -exec file -i {} \\;
 
  A continuación explico cada uno de los parámetros utilizados:
+<!-- more -->
 
 *   El punto "." hace referencia al directorio actual, si quisieras correr el comando sobre otro directorio tendrías que cambiar el punto por el directorio que desees.
 *   **\-type f** limita la búsqueda a sólo archivos, no directorios.

@@ -1,13 +1,17 @@
 ---
 title: Router Keygen para Android
-categories:
-  - blog/tecnologia/apps
-id: 2
 date: 2012-02-17 19:08:33
+categories:
+  - apps
+id: 2
 tags:
+  - android
+  - keygen
+  - wifi
 ---
 
 Me di a la tarea de instalar aircrack-ng en mi dispositivo android, mi búsqueda no duró mucho debido a la poca información al respecto existente en la web. Sinceramente no tengo mucho tiempo para profundizar en la investigación sobre como lograr correr aircrack en android, lo que de alguna forma debería ser posible porque android está basado en Linux ,por otro lado no creo que algún  celular o tablet  tenga una tarjeta inalámbrica preparada para la inyección de paquetes. Es entonces cuando gracias a un compañero del tabajo, conocí la aplicación Router Keygen de la cual voy a platicarles.
+<!-- more -->
 
 Puede resultar frustrante, para aquellos como yo quienes no contamos con un plan de datos, querer navegar en internet desde su dispositivo estando en alguna ubicación donde  haya muchos AP's pero con algún tipo de seguridad activada. Y es que hace algunos años los modems de Telmex venían sin seguridad alguna y uno podía libremente "tomar prestado el internet del vecino", al día de hoy son mínimos aquellos modems sin seguridad. Ahora por defecto telmex distribuye routers con por lo menos WEP habilitada evitando, de esta manera, al usuario promedio conectarse gratuitamente.
 

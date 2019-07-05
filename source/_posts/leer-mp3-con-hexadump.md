@@ -1,13 +1,18 @@
 ---
 title: Leer mp3 con hexdump
-categories:
-  - blog/tecnologia/linux
-id: 4
 date: 2014-07-09 02:27:24
+categories:
+  - linux
+id: 4
 tags:
+  - hexdump
+  - bash
+  - linux
+  - mp3
 ---
 
 Con el fin de comprender a mayor detalle la estructura interna de un archivo mp3 (técnicamente me refiero al estándar MPEG-1 capa 3), me di a la tarea de investigar una forma sencilla de abrir el fichero para ver su contenido.Lo primero que vino a mi mente fue utilizar un editor de textos tradicional (gedit, notepad, notepad++, emacs, etc), algunos de ellos lograrán mostrar el contenido binario del archivo pero demora mucho tiempo y no es eficiente hacerlo de esta manera. Fue entonces cuando _google_ vino al rescate y los resultados sugirieron utilizar el programa **hexdump** para sistemas operativos linux, así que lo instalé y me dediqué a hacer pruebas para entender el funcionamiento del mismo.
+<!-- more -->
 
 **hexdump** es sumamente fácil de utilizar, tan sólo basta con escribir el nombre del programa y el fichero que se desea leer:
 
