@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
 
@@ -27,12 +27,10 @@
     %>
 
     <title><% if( title ) { %><%= title %> | <% } %><%= config.title %></title>
-    <meta name="author" content="<%= config.author %>" />
-    <meta name="version" content="1.0.0" />
-    <meta name="keywords" content="<%= config.keywords %>" />
-    <meta name="description" content="<%= description %>" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <meta name="author" content="<%= config.author %>" />
+    <%- open_graph({twitter_id: theme.twitter}) %>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <% if( theme.rss ) { %>
     <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
@@ -41,6 +39,7 @@
     <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
 
+    <%- partial('_partial/google-analytics') %>
     <%- css('css/style') %>
 </head>
 <body>

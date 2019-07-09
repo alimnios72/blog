@@ -1,12 +1,9 @@
 # Header
 menu:
   Home: /
-  Front-End: /categories/front-end
-  Back-End: /categories/back-end
   Tags: /tags
   Archives: /archives
   RSS: /atom.xml
-  Acerca de: /about
 
 # Content
 excerpt_link: Leer más
@@ -22,8 +19,8 @@ author:
 links:
   - svg: ./source/svg/github.svg
     url: https://github.com/alimnios72
-  - svg: ./source/svg/more.svg
-    url: http://weibo.com/sanonz
+  - svg: ./source/svg/linkedin.svg
+    url: https://www.linkedin.com/in/jorge-zapata-guridi-89b97523/
   - svg: ./source/svg/twitter.svg
     url: https://twitter.com/cacharro
 
@@ -31,7 +28,8 @@ links:
 git_commit:
   enable: false
 
-
 # Miscellaneous
 rss: /atom.xml
 favicon: /images/favicon.ico
+twitter: cacharro
+google_analytics: UA-XXXXXXXX-X
