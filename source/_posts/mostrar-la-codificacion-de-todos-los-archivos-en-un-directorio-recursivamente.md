@@ -10,7 +10,7 @@ tags:
   - find
 ---
 
-Si por alguna razón tienes la necesidad de mostrar la codificación (encoding) de todos los archivos dentro de un directorio y subdirectorios, el comando **find** de Linux resulta de gran ayuda. Supongamos que deseas mostrar la codificación de todos los archivos _.php_ dentro del directorio acutal:$ find . -type f -name \\\*.php -exec file -i {} \\;
+Si por alguna razón tienes la necesidad de mostrar la codificación (encoding) de todos los archivos dentro de un directorio y subdirectorios, el comando **find** de Linux resulta de gran ayuda. Supongamos que deseas mostrar la codificación de todos los archivos _.php_ dentro del directorio actual: `$ find . -type f -name \\\*.php -exec file -i {} \\;`
 
  A continuación explico cada uno de los parámetros utilizados:
 <!-- more -->
