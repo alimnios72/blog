@@ -1,6 +1,8 @@
 ---
 title: Servidor NAS con Raspberry Pi
 date: 2021-05-18 18:46:37
+categories:
+  - raspberry
 tags:
   - raspberry
   - tutoriales

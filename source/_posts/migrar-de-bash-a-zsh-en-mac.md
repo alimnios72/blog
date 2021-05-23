@@ -1,10 +1,12 @@
 ---
 title: Migrar de bash a zsh en Mac
+date: 2021-05-23 15:26:40
+categories:
+  - mac
 tags:
   - mac
   - shell
   - zsh
-date: 2021-05-23 15:26:40
 ---
 
 
