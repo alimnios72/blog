@@ -91,4 +91,7 @@ feed:
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: aws-s3
+  region: us-west-2
+  bucket: blog.jazg.net
+  #test: ./deploy # S3Mock
