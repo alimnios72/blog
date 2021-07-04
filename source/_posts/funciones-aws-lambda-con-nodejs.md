@@ -34,4 +34,17 @@ Para finalmente ejecutar el test recién creado da click en "Test" y una nueva p
 
 {% asset_img exec_results.png Resultados %}
 
+El editor de texto en la página de la función es sumamente práctico para funciones sumamente sencillas pero las cosas se empiezan a complicar cuando tu programa tiene varios archivos como son todas aquellas dependencias (`node_modules`) que tu programa pudiera necesitar. Es importante mencionar que el runtime de Nodejs en lambda no incluye ninguna librería externa a excepción del paquete `aws-sdk` (puedes acceder directamente a éste con `require('aws-sdk')` sin necesidad de tenerlo en tus `node_modules`). En este tipo de situaciones es preferible trabajar localmente, crear un archivo zip de tu programa y subirlo a AWS.
+
+Para subir un archivo zip con tu función puedes hacerlo manualmente desde el editor web y elegir "Upload from" -> ".zip file" o si tienes `aws-cli` instalado en tu computadora ejecutar un simple comando que subirá el zip por ti. A continuación muestro como crear y subir el zip con `aws-cli`:
+
+- Primero crea el archivo zip con la herramienta que prefieras, yo use la terminal y el programa `zip`. Adicionalmente me cercioré que archivos _git_ no sean includios en el zip.
+```
+zip  -r function . -x '*.git*
+```
+- Después ejecuta el siguiente comando desde el mismo directorio donde creaste el zip. No olvides reemplazar `<funcion>` con el nombre de tu función.
+```
+aws lambda update-function-code --function-name <funcion> --zip-file fileb://function.zip
+```
+
 Esto es todo para este pequeño tutorial, en un siguiente artículo enseñaré como invocar funciones lambda con eventos de CloudWatch y como subscribir funciones a temas de SNS.
