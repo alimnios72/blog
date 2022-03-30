@@ -1,7 +1,14 @@
 <aside id="aside" class="aside">
     <div id="aside-mask" class="aside-mask"></div>
     <div id="aside-inner" class="aside-inner">
-        <%- search_form({button: '<i class="icon-search-stroke"></i>'}) %>
+        <nav class="top-nav">
+            <ul>
+            <% for (var key in theme.menu) { %>
+                <li><a class="<% if( theme.menu[key] === '/' && is_home() || is_current(theme.menu[key]) ) {  %>active<% } %>" href="<%- url_for(theme.menu[key]) %>"><%= key %></a></li>
+            <% } %>
+            </ul>
+        </nav>
+        <%- search_form({button: '<i class="icon-search-stroke"></i>', text: 'Buscar'}) %>
 
         <% var t = null %>
         <% if( is_post() ) { %>
