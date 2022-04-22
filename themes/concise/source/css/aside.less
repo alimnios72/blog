@@ -138,6 +138,31 @@
     }
 }
 
+.top-nav {
+    position: relative;
+    top: 3%;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        
+        li {
+            display: inline-block;
+
+            a {
+                margin-right: 10px;
+
+                &.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (max-height: 588px) {
     .author-meta {
