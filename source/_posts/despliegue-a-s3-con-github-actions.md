@@ -21,7 +21,7 @@ A grandes razgos, el proceso de despliegue del blog consiste en los siguientes p
 *Los pasos descritos a continuación asumen que tienes un repositorio en github.*
 
 ## Configuración del workflow
-Lo primero que debes hacer es agregar un folder en tu proyecto con el nombre de `.github` (nota el punto al principio del nombre). Dentro del folder creado, crea otro folder con el nombre `workflows`. En el nuevo directorio, crea un archivo con extensión `.yml` (YAML), el nombre del achivo puede ser cualquiera, yo lo llamé `deploy.yml.`
+Lo primero que debes hacer es agregar un folder en tu proyecto con el nombre de `.github` (nota el punto al principio del nombre). Dentro del folder creado, crea otro folder con el nombre `workflows`. En el nuevo directorio, crea un archivo con extensión `.yml` (YAML), el nombre del achivo puede ser cualquiera, yo lo llamé `deploy.yml`.
 
 El contenido del archivo YAML debe ser algo como lo siguiente:
 
@@ -60,7 +60,7 @@ jobs:
 Empecemos a describir la sintaxis y el significado archivo:
 
 - `name` es una etiqueta para nombrar un paso o una serie de pasos. Ayuda a identificar que paso se está ejecutando en cada momento.
-- `on` `push` `branches` estas instrucciones indican a github cuando empezar a correr los trabajos. En el caso de mi configuración, github ejecuta los trabajos cuando hago push al branch main, sin embargo, los actions son bastante flexibes y pueden configurarse para pull requests, distintos branches, cuando se crea un nuevo tag o release, cuando se crea un nuevo issue, etc. Entra [aquí](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on) si necesitas más detalles.
+- `on` `push` `branches` estas instrucciones indican a github cuál es el detonante para empezar a correr los trabajos. En el caso de mi configuración, github ejecuta los trabajos cuando hago push al branch main, sin embargo, los actions son bastante flexibes y pueden configurarse para pull requests, distintos branches, cuando se crea un nuevo tag o release, cuando se crea un nuevo issue, etc. [Entra aquí](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on) si necesitas más detalles.
 - `jobs` cada trabajo puede llevar uno o más pasos. Cada workflow puede contener uno o más trabajos. Por defecto, los trabajos se ejecutan en paralelo pero hay forma de cambiar este comportamiento.
 - `build` es el nombre del trabajo.
 - `runs-on` indica en donde se corre el trabajo. En mi caso, github corre los pasos en un servidor ubuntu.
@@ -70,6 +70,8 @@ Empecemos a describir la sintaxis y el significado archivo:
   - `Installing Node.js` instala node 16 en el servidor
   - `Installing dependencies` ejecuta `npm install` para instalar las dependencias del proyecto.
   - `Building project` ejecuta el script que construye el proyecto. En este caso `hexo` crea los archivos estáticos del blog.
+  - `Configure AWS Credentials` esta acción utiliza las credenciales provistas para poder ejecutar la línea de comandos de AWS con los permisos correspondientes. Más adelante explico como obtener dichas credenciales y configurar los secretos.
+  - `Deploy to S3 bucket` por último, esta acción ejecuta el cli de AWS para subir los archivos al bucket de S3 indicado. En el caso específico de mi proyecto, subirá sólo los archivos del directorio `public` al bucket y con el parámetro `--delete` asegura de borrar el contenido anterior.
 
 ## Configuración de secretos
 
