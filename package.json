@@ -5,6 +5,11 @@
   "hexo": {
     "version": "6.1.0"
   },
+  "scripts": {
+    "start": "hexo server",
+    "build": "hexo clean && hexo generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "hexo": "^6.0.0",
     "hexo-generator-archive": "^1.0.0",
